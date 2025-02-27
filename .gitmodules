@@ -1,0 +1,6 @@
+[submodule "rivet-code-challenge"]
+	path = rivet-code-challenge
+	url = git@github.com:sawalls/rivet-code-challenge.git
+[submodule "reversed-backend"]
+	path = reversed-backend
+	url = git@github.com:sawalls/reversed-backend.git
