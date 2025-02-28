@@ -1,4 +1,4 @@
-theme: jekyll-theme-minima
+remote_theme: jekyll/minima
 title: Challenge Suite
 description: A suite of software to run Schala's souped up Rivet coding challenge
 url: https://schala.github.io/challenge-suite
