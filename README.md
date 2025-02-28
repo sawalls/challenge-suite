@@ -1,4 +1,4 @@
-![challenge-suite logo](/rivet-code-challenge/public/logo192.png)
+![challenge-suite logo](/rivet-code-challenge/public/logo192.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 ## A suite of software to run Schala's souped up coding challenge
 
