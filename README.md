@@ -80,6 +80,10 @@ runs `node ./app.js --watch`
 
 ![A screenshot of the other launch configurations](/docs/assets/other-launch-configs-screenshot.png)
 
+### TL;DR for console
+
+`npm start` in `challenge-suite` should run a `concurrently` of the two projects. You won't have access to the `vite` keyboard commands, however.
+
 ## Troubleshooting
 
 ```
