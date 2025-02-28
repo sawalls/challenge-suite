@@ -12,7 +12,7 @@ You can find their individual github repositories here:
 - <https://github.com/sawalls/rivet-code-challenge>
 - <https://github.com/sawalls/reversed-backend>
 
-<video>
+<video controls>
   <source type="video/mp4" src="https://filedn.com/lGIIm4sv6fGXUrnpi6dK4E7/full-demo-video.mp4">
 </video>
 
