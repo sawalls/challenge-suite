@@ -1,0 +1,31 @@
+{
+  "folders": [
+    {
+      "name": "challenge-suite",
+      "path": "."
+    },
+    {
+      "name": "rivet-code-challenge",
+      "path": "./rivet-code-challenge"
+    },
+    {
+      "name": "reversed-backend",
+      "path": "./reversed-backend"
+    }
+  ],
+  "settings": {},
+  "launch": {
+    "version": "0.2.0",
+    "compounds": [
+      {
+        "name": "launch chrome, frontend, and backend",
+        "configurations": ["launch chrome and vite", "node watch"],
+        "stopAll": true,
+        "presentation": {
+          "hidden": false,
+          "order": 1
+        }
+      }
+    ]
+  }
+}
