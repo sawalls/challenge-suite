@@ -1,0 +1,22 @@
+{
+  "name": "challenge-suite",
+  "version": "1.0.0",
+  "description": "A suite of software to run Schala’s souped up coding challenge",
+  "homepage": "https://github.com/sawalls/challenge-suite#readme",
+  "bugs": {
+    "url": "https://github.com/sawalls/challenge-suite/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sawalls/challenge-suite.git"
+  },
+  "license": "ISC",
+  "author": "Schala Walls",
+  "type": "module",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "install": "cd ./reversed-backend && npm install && cd ../rivet-code-challenge && npm install"
+  }
+}

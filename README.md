@@ -22,13 +22,30 @@ Requires `git >= v2.13`, `node >= v22.13.0`, and `11.0.0`.
 
 ```
 git clone --recurse-submodules -j8 git@github.com:sawalls/challenge-suite.git
-cd rivet-code-challenge && npm i
-cd ../reversed-backend && npm i
+npm i
 ```
 
 I'm not sure which using or _not_ using git submodules is a sin. Either way it can be a bit difficult to
 configure, so I'm sorry for the overhead. I haven't needed anything that wasn't in the book chapter:
 https://git-scm.com/book/en/v2/Git-Tools-Submodules
+
+`npm install` in the `challenge-suite` directory will install in the submodules:
+
+```
+npm i
+> challenge-suite@1.0.0 install
+> cd ./reversed-backend && npm install && cd ../rivet-code-challenge && npm install
+```
+
+But you can also run manually per package:
+
+```
+cd rivet-code-challenge && npm i
+```
+
+```
+cd reversed-backend && npm i
+```
 
 ## Usage
 
