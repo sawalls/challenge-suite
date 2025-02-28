@@ -1,11 +1,16 @@
-# challenge-suite
+![challenge-suite logo](/rivet-code-challenge/public/logo512.png)
 
 ## A suite of software to run Schala's souped up coding challenge
 
 This repository is a host for two submodules:
 
-- `rivet-code-challenge`, an enhanced version of the coding challenge I originally provided
-- `reversed-backend`, a bog-simple node.js/express in-memory server because the demo backend server is not running
+- [`rivet-code-challenge`](/rivet-code-challenge/), an enhanced version of the coding challenge I originally provided
+- [`reversed-backend`](/rivet-code-challenge/), a bog-simple node.js/express in-memory server because the demo backend server is not running
+
+You can find their individual github repositories here:
+
+- https://github.com/sawalls/rivet-code-challenge
+- https://github.com/sawalls/reversed-backend
 
 ## Installation
 
@@ -30,6 +35,9 @@ code ./challenge-suite.code-workspace
 ```
 
 Then go to Run and Debug (Ctrl+Shift+D on Windows) and select the launch configuration: `launch chrome, frontend, and backend`.
+
+![A screenshot of the "launch chrome, frontend, and backend" launch configuration](/docs/assets/launch-config-screenshot.png)
+
 This will start:
 
 - `node ./app.js --watch` in `reversed-backend` which will start the express backend listening on port 3001 by default. It will show up in the Run and Debug `CALL STACK` tray as `app.js`
@@ -39,6 +47,8 @@ This will start:
 - Chrome. When launched in this way, Code has access to the debugger of Chrome, so breakpoints inside `rivet-code-challenge`
   should pause your execution in the `schalfile` entry in the Run and Debug `CALL STACK` tray
 
+![A screenshot of the `CALL STACK` tray and an active breakpoint](/docs/assets/callstack-breakpoint-screenshot.png)
+
 The combination configuration is set to stopAll, so if you close either of the frontend, or the backend,
 the other will close, along with chrome and the bottom panel. You can make personal changes to launch.json
 as desired.
@@ -46,6 +56,8 @@ as desired.
 If you need to run components individually, with `challenge-suite.code-workspace` loaded, you have direct
 access to the launch.jsons of the individual projects, as well, so you can launch, e.g. `node watch`, which
 runs `node ./app.js --watch`
+
+![A screenshot of the other launch configurations](/docs/assets/other-launch-configs-screenshot.png)
 
 ## Troubleshooting
 
