@@ -1,16 +1,20 @@
-![challenge-suite logo](/rivet-code-challenge/public/logo512.png)
+![challenge-suite logo](/rivet-code-challenge/public/logo192.png)
 
 ## A suite of software to run Schala's souped up coding challenge
 
 This repository is a host for two submodules:
 
-- [`rivet-code-challenge`](/rivet-code-challenge/), an enhanced version of the coding challenge I originally provided
-- [`reversed-backend`](/rivet-code-challenge/), a bog-simple node.js/express in-memory server because the demo backend server is not running
+- `rivet-code-challenge`, an enhanced version of the coding challenge I originally provided
+- `reversed-backend`, a bog-simple node.js/express in-memory server because the demo backend server is not running
 
 You can find their individual github repositories here:
 
-- https://github.com/sawalls/rivet-code-challenge
-- https://github.com/sawalls/reversed-backend
+- <https://github.com/sawalls/rivet-code-challenge>
+- <https://github.com/sawalls/reversed-backend>
+
+<video>
+  <source type="video/mp4" src="https://filedn.com/lGIIm4sv6fGXUrnpi6dK4E7/full-demo-video.mp4">
+</video>
 
 ## Installation
 
