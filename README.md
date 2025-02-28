@@ -7,6 +7,20 @@ This repository is a host for two submodules:
 - `rivet-code-challenge`, an enhanced version of the coding challenge I originally provided
 - `reversed-backend`, a bog-simple node.js/express in-memory server because the demo backend server is not running
 
+## Installation
+
+Requires `git >= v2.13`, `node >= v22.13.0`, and `11.0.0`.
+
+```
+git clone --recurse-submodules -j8 git@github.com:sawalls/challenge-suite.git
+cd rivet-code-challenge && npm i
+cd ../reversed-backend && npm i
+```
+
+I'm not sure which using or _not_ using git submodules is a sin. Either way it can be a bit difficult to
+configure, so I'm sorry for the overhead. I haven't needed anything that wasn't in the book chapter:
+https://git-scm.com/book/en/v2/Git-Tools-Submodules
+
 ## Usage
 
 ### TL;DR for Visual Studio Code
