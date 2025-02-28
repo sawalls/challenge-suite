@@ -1,0 +1,75 @@
+# challenge-suite
+
+## A suite of software to run Schala's souped up coding challenge
+
+This repository is a host for two submodules:
+
+- `rivet-code-challenge`, an enhanced version of the coding challenge I originally provided
+- `reversed-backend`, a bog-simple node.js/express in-memory server because the demo backend server is not running
+
+## Usage
+
+### TL;DR for Visual Studio Code
+
+```
+code ./challenge-suite.code-workspace
+```
+
+Then go to Run and Debug (Ctrl+Shift+D on Windows) and select the launch configuration: `launch chrome, frontend, and backend`.
+This will start:
+
+- `node ./app.js --watch` in `reversed-backend` which will start the express backend listening on port 3001 by default. It will show up in the Run and Debug `CALL STACK` tray as `app.js`
+  Output will be routed to the `DEBUG CONSOLE` in the bottom panel.
+- `npm start` = `vite` in `rivet-code-challenge` which will start the frontend served from vite dev server. It will open interactively
+  in the `TERMINAL` in the bottom panel. Vite has useful hotkeys you can check out with `h + enter` on the `TERMINAL`
+- Chrome. When launched in this way, Code has access to the debugger of Chrome, so breakpoints inside `rivet-code-challenge`
+  should pause your execution in the `schalfile` entry in the Run and Debug `CALL STACK` tray
+
+The combination configuration is set to stopAll, so if you close either of the frontend, or the backend,
+the other will close, along with chrome and the bottom panel. You can make personal changes to launch.json
+as desired.
+
+If you need to run components individually, with `challenge-suite.code-workspace` loaded, you have direct
+access to the launch.jsons of the individual projects, as well, so you can launch, e.g. `node watch`, which
+runs `node ./app.js --watch`
+
+## Troubleshooting
+
+```
+Debugger attached.
+Waiting for the debugger to disconnect...
+node:internal/errors:496
+    ErrorCaptureStackTrace(err);
+    ^
+
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'express' imported from .\challenge-suite\reversed-backend\app.js
+    at new NodeError (node:internal/errors:405:5)
+    at packageResolve (node:internal/modules/esm/resolve:782:9)
+    at moduleResolve (node:internal/modules/esm/resolve:831:20)
+    at defaultResolve (node:internal/modules/esm/resolve:1036:11)
+    at DefaultModuleLoader.resolve (node:internal/modules/esm/loader:251:12)
+    at DefaultModuleLoader.getModuleJob (node:internal/modules/esm/loader:140:32)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/module_job:76:33)
+    at link (node:internal/modules/esm/module_job:75:36) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+
+Node.js v20.5.0
+Waiting for the debugger to disconnect...
+```
+
+Run `npm i` inside of `./reversed-backend`
+
+```
+npm start
+Debugger attached.
+
+> code-challenge-starter@0.1.0 start
+> vite
+
+'vite' is not recognized as an internal or external command,
+operable program or batch file.
+Waiting for the debugger to disconnect...
+```
+
+Run `npm i` inside of `./rivet-code-challenge`
