@@ -16,6 +16,19 @@ You can find their individual github repositories here:
   <source type="video/mp4" src="https://filedn.com/lGIIm4sv6fGXUrnpi6dK4E7/full-demo-video.mp4">
 </video>
 
+## OK, but why does it exist?
+
+Recovery is going well, I have a decent amount of time, and it's embarrassing but I want my job back. I figured it was worth spending a sprint's worth of work proving that I'm dedicated and have the skills.
+I looked around for a way to do it, and cleaning up some of the "should do"s of my original coding
+challenge seemed to fit the bill as a way to show off.
+
+![A heatmap of Schala's 2025 productivity](/docs/assets/2025-contributions-screenshot.png)
+
+I've tried to make the tech stack as similar to what I was using on the job as possible.
+The message here is that I could be fully up to speed and solving problems tomorrow,
+no additional training required. If anything in this repository doesn't work, doesn't make sense,
+or you'd just like to talk about it, please contact me.
+
 ## Installation
 
 Requires `git >= v2.13`, `node >= v22.13.0`, and `11.0.0`.
