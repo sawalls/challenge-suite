@@ -17,14 +17,14 @@
     "doc": "docs"
   },
   "scripts": {
-    "checkVersion": "node --version",
     "install": "cd ./reversed-backend && npm install && cd ../rivet-code-challenge && npm install",
     "start": "concurrently \"cd ./reversed-backend && npm start\" \"cd ./rivet-code-challenge && npm start\""
   },
-  "dependencies": {
-    "node": "^22.13.0"
-  },
   "devDependencies": {
     "concurrently": "^9.1.2"
+  },
+  "engines": {
+    "node": ">=22.13.0",
+    "npm": ">=11.0.0"
   }
 }
