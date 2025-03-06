@@ -110,9 +110,9 @@ runs `node ./app.js --watch`
 ## Documentation
 
 This `README.md` that you're reading right now is meant to be read both through text and through
-the Github repository page. Github renders markdown with Redcarpet, but I haven't found a
-perfectly reliable way to test it locally. I recommend making a branch for changes and using the
-Preview in the built-in markdown editor.
+the Github repository page. Github renders markdown with Redcarpet. I recommend making a branch
+for changes and using the Preview in the built-in markdown editor for Github, since you
+can see it in context that way, but there's a python tool called `grip` that I sometimes use to check.
 
 However, for the actual Github _page_, Github has provided instructions on how to render locally.
 If you're interested in doing so, install Jekyll locally, `bundle install`, then run
