@@ -21,7 +21,9 @@
     "start": "concurrently \"cd ./reversed-backend && npm start\" \"cd ./rivet-code-challenge && npm start\""
   },
   "devDependencies": {
-    "concurrently": "^9.1.2"
+    "concurrently": "^9.1.2",
+    "eslint-import-resolver-typescript": "^3.8.3",
+    "eslint-plugin-import": "^2.31.0"
   },
   "engines": {
     "node": ">=22.13.0",
