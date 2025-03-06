@@ -4,3 +4,9 @@ description: A suite of software to run Schala's souped up Rivet coding challeng
 url: https://schala.github.io/challenge-suite
 baseurl: /challenge-suite
 permalink: /:title
+exclude:
+  - node_modules
+  - reversed-backend/node_modules
+  - rivet-code-challenge/node_modules
+plugins:
+  - jekyll-readme-index
