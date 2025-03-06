@@ -6,11 +6,12 @@
 
 This repository is a host for two submodules:
 
-- `rivet-code-challenge`, an enhanced version of the coding challenge I originally provided
+- `rivet-code-challenge`, an enhanced version of the frontend coding challenge I originally provided
 - `reversed-backend`, a bog-simple node.js/express in-memory server because the demo backend server is not running
 
-You can find their individual github repositories here:
+You can find the repositories for the suite and its dependencies here:
 
+- <https://github.com/sawalls/challenge-suite>
 - <https://github.com/sawalls/rivet-code-challenge>
 - <https://github.com/sawalls/reversed-backend>
 
