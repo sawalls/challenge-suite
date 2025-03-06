@@ -1,4 +1,6 @@
-![challenge-suite logo](/rivet-code-challenge/public/logo192.png){:style="display:block; margin-left:auto; margin-right:auto"}
+<p align="center" width="100%">
+  <img src="docs/assets/logo192.png" alt="challenge-suite logo">
+</p>
 
 ## A suite of software to run Schala's souped up coding challenge
 
@@ -22,7 +24,9 @@ Recovery is going well, I have a decent amount of time, and it's embarrassing bu
 I looked around for a way to do it, and cleaning up some of the "should do"s of my original coding
 challenge seemed to fit the bill as a way to show off.
 
-![A heatmap of Schala's 2025 productivity](/docs/assets/2025-contributions-screenshot.png)
+<p align="center" width="100%">
+  <img src="docs/assets/2025-contributions-screenshot.png" alt="A heatmap of Schala's 2025 productivity">
+</p>
 
 I've tried to make the tech stack as similar to what I was using on the job as possible.
 The message here is that I could be fully up to speed and solving problems tomorrow,
@@ -31,7 +35,7 @@ or you'd just like to talk about it, please contact me.
 
 ## Installation
 
-Requires `git >= v2.13`, `node >= v22.13.0`, and `11.0.0`.
+Running the suite requires `git >= v2.13`, `node >= v22.13.0`, and `11.0.0`.
 
 ```
 git clone --recurse-submodules -j8 git@github.com:sawalls/challenge-suite.git
@@ -70,7 +74,9 @@ code ./challenge-suite.code-workspace
 
 Then go to Run and Debug (Ctrl+Shift+D on Windows) and select the launch configuration: `launch chrome, frontend, and backend`.
 
-![A screenshot of the "launch chrome, frontend, and backend" launch configuration](/docs/assets/launch-config-screenshot.png)
+<p align="center" width="100%">
+  <img src="docs/assets/launch-config-screenshot.png" alt="A screenshot of the 'launch chrome, frontend, and backend' launch configuration">
+</p>
 
 This will start:
 
@@ -81,7 +87,9 @@ This will start:
 - Chrome. When launched in this way, Code has access to the debugger of Chrome, so breakpoints inside `rivet-code-challenge`
   should pause your execution in the `schalfile` entry in the Run and Debug `CALL STACK` tray
 
-![A screenshot of the `CALL STACK` tray and an active breakpoint](/docs/assets/callstack-breakpoint-screenshot.png)
+<p align="center" width="100%">
+  <img src="docs/assets/callstack-breakpoint-screenshot.png" alt="A screenshot of the `CALL STACK` tray and an active breakpoint">
+</p>
 
 The combination configuration is set to stopAll, so if you close either of the frontend, or the backend,
 the other will close, along with chrome and the bottom panel. You can make personal changes to launch.json
@@ -91,11 +99,38 @@ If you need to run components individually, with `challenge-suite.code-workspace
 access to the launch.jsons of the individual projects, as well, so you can launch, e.g. `node watch`, which
 runs `node ./app.js --watch`
 
-![A screenshot of the other launch configurations](/docs/assets/other-launch-configs-screenshot.png)
+<p align="center" width="100%">
+  <img src="docs/assets/other-launch-configs-screenshot.png" alt="A screenshot of the other launch configurations">
+</p>
 
 ### TL;DR for console
 
 `npm start` in `challenge-suite` should run a `concurrently` of the two projects. You won't have access to the `vite` keyboard commands, however.
+
+## Documentation
+
+This `README.md` that you're reading right now is meant to be read both through text and through
+the Github repository page. Github renders markdown with Redcarpet, but I haven't found a
+perfectly reliable way to test it locally. I recommend making a branch for changes and using the
+Preview in the built-in markdown editor.
+
+However, for the actual Github _page_, Github has provided instructions on how to render locally.
+If you're interested in doing so, install Jekyll locally, `bundle install`, then run
+
+```
+bundle exec jekyll serve --baseurl=""
+```
+
+You should get a prompt telling you how to access the static content it's serving. It's _almost_
+100% accurate to what shows up on Github. I haven't noticed any differences that change anything
+meaningful.
+
+Github does _something_ to render README.md as the default as a fallback. I like having one source
+of truth that's also terminal-readable, so I used the `jekyll-readme-index` plugin to replicate
+that behavior.
+
+If you change README.md, please make sure it renders pleasantly as a Jekyll page _and_ as a
+github page.
 
 ## Troubleshooting
 
