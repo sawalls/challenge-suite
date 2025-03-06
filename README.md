@@ -38,7 +38,7 @@ or you'd just like to talk about it, please contact me.
 Running the suite requires `git >= v2.13`, `node >= v22.13.0`, and `11.0.0`.
 
 ```
-git clone --recurse-submodules -j8 git@github.com:sawalls/challenge-suite.git
+git clone --recurse-submodules -j8 https://github.com/sawalls/challenge-suite.git
 npm i
 ```
 
